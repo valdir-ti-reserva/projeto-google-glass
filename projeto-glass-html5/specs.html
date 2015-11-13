@@ -1,23 +1,71 @@
-Google Glass
-A revolução do Google está chegando
+<!DOCTYPE html>
+<html lang="pt-br" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+      xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8"/>
+    <title>Tudo sobre Google Glass</title>
+    <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+    <link rel="stylesheet" href="_css/specs.css"/>
+</head>
 
-[AQUI ENTRA UMA FOTO]
+<script src="_javascript/funcoes.js"></script>
 
-Menu Principal
-- Home
-- Especificações
-- Fotos
-- Multimídia
-- Fale conosco
+<body>
+<div id="interface">
+    <header id="cabecalho">
+        <hgroup>
+            <h1>Google Glass</h1>
+            <h2>A revolução do Google está chegando</h2>
+        </hgroup>
+        <img id="icone" src="_imagens/especificacoes.png">
+        <nav id="menu">
+            <h1>Menu Principal</h1>
+            <ul type="disc">
+                <li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/especificacoes.png')"><a href="index.html" target="_self">Home</a></li>
+                <li onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/especificacoes.png')"><a href="specs.html" target="_self">Especificações</a></li>
+                <li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/especificacoes.png')"><a href="fotos.html" target="_self">Fotos</a></li>
+                <li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/especificacoes.png')"><a href="multimidia.html" target="_self">Multimídia</a></li>
+                <li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/especificacoes.png')"><a href="fale-conosco.html" target="_self">Fale conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+        <section id="corpoFull">
+            <article id="noticia-principal">
+                <header id="cabecalho-artigo">
+                    <hgroup>
+                        <h3>Glass > Especificações</h3>
+                        <h1>Raio-X no Google Glass</h1>
+                        <h2>por Valdir Silva</h2>
+                        <h3 class="dir">Atualizado em Novembro/2015</h3>
+                    </hgroup>
+                </header>
 
-Glass > Especificações
-Raio-X no Google Glass
-por Gustavo Guanabara
-Atualizado em 01/Maio/2013
+        <p>Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de                novas informações.</p>
 
-Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.
+                <section id="conteudo">
+                    <img src="_imagens/glass-esquema-marcado.jpg" usemap="#meuMapa"/><!-- Definindo o mapa a ser utilizado -->
+                    <!--
+                        Definindo mapa da imagem no oculos
+                        Coordenadas para identificar local desejado para o click.
+                    -->
+                    <map name="meuMapa">
+                        <area shape="poly" coords="183,218,267,208,267,244,185,257" href="google-glass.html#tela" target="janela"/>
+                        <area shape="circle" coords="159,244,12" href="google-glass.html#camera" target="janela"/>
+                        <area shape="circle" coords="77,52,12" href="google-glass.html#baterias" target="janela"/>
+                        <area shape="poly" coords="28,145,83,214,82,250,26,166" href="google-glass.html#sensores" target="janela"/>
+                    </map>
+                     <iframe src="google-glass.html" name="janela" id="frameSpec"></iframe>
+                </section>
 
-[AQUI ENTRA UMA IMAGEM]
+            </article>
+        </section>
 
-Copyright 2013 - by Gustavo Guanabara<
-Facebook | Twitter
+    <footer id="rodape">
+        <p>Copyright&copy; 2015 - by Valdir Silva </br>
+            <a href="https://www.facebook.com/valdir.silva.712" target="_blank">Facebook</a> |
+            <a href="https://twitter.com/manoval" target="_blank">Twitter</a>
+        </p>
+    </footer>
+</div>
+</body>
+</html>

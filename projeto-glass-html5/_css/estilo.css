@@ -1,12 +1,68 @@
 @charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web);
+
+@font-face {
+    font-family: 'FonteLogo';
+    src: url("../_fonts/bubblegum-sans-regular.otf");
+}
 
 body{
-    background-color: white;
+    font-family: Arial, sans-serif;
+    background-color: #dddddd;
+    color: rgba(0,0,0,1);
+
+}
+
+div#interface{
+    background-color: #ffffff;
+    width: 900px;
+    margin: -20px auto 0px auto;
+    box-shadow: 0px 0px 20px rgba(0,0,0,.5);
+    padding: 15px;
 }
 
 p {
     text-align: justify;
     text-indent: 40px;
+}
+
+a{
+    color: #606060;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/*Configuracao cabecalho*/
+header#cabecalho img#icone{
+    position: absolute;
+    left: 1010px;
+    top: 60px;
+}
+
+header#cabecalho{
+    border-bottom: 1px #606060 solid;
+    height: 150px;
+    background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 90px;
+}
+
+header#cabecalho h1{
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 30pt;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+header#cabecalho h2{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 18pt;
+    color:#888888;
+    padding: 0px;
+    margin-top: 0px;
 }
 
 /*Formatacao de imagens com legenda*/
@@ -22,7 +78,6 @@ figure.foto-legenda img{
 
 figure.foto-legenda figcaption{
     opacity: 0;
-
     background-color: rgba(0,0,0,.2);
     color: white;
     position: absolute;
@@ -36,4 +91,164 @@ figure.foto-legenda figcaption{
 
 figure.foto-legenda:hover figcaption{
     opacity: 1;
+}
+
+/*Formatacao do menu*/
+nav#menu{
+    display: block;
+}
+
+nav#menu ul{
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -20px;
+    left: 480px;
+}
+
+nav#menu li{
+    display: inline-block;
+    background-color: #dddddd;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 1s;
+}
+
+nav#menu li:hover{
+    background-color: #606060;
+}
+
+nav#menu h1{
+    display: none;
+}
+
+/*Configuracao do menu com link*/
+nav#menu a{
+    color: #000000;
+    text-decoration: none;
+}
+nav#menu a:hover{
+    color: #ffffff;
+}
+
+section#corpo{
+    display: block;
+    width: 550px;
+    float: left;
+    border-right: 1px solid #606060; /*Desenhar borda lateral*/
+    padding-right: 15px; /*inserir espaco na lateral do texto*/
+}
+
+/*Configurando artigo*/
+article#noticia-principal h2{
+    font-size: 13pt;
+    color: #606060;
+    background-color: #dddddd;
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 10px 0px;
+}
+
+header#cabecalho-artigo h1{
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+header#cabecalho-artigo h2{
+    font-size: 13pt;
+    color: #dddddd;
+    background-color: #ffffff;
+    margin: 0px;
+}
+
+header#cabecalho-artigo h3{
+    font-size: 12pt;
+    color: #606060;
+}
+
+header#cabecalho-artigo h3.dir{
+    text-align: right;
+}
+
+/*Configuracoes da tabela*/
+table#tblEspec{
+    border: 2px solid #606060;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table#tblEspec td{
+    border: 1px solid #606060;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/*Coluna da esquerda*/
+table#tblEspec td.colEsq{
+    background-color: #606060;
+    color: #ffffff;
+    vertical-align: top;
+    text-align: right;
+    font-weight: bold;
+}
+
+/*Coluna da direita*/
+table#tblEspec td.colDir{
+    background-color: #cecece;
+}
+
+table#tblEspec caption{
+    color: #888888;
+    font-size: 13pt;
+    font-weight: bolder;
+}
+
+table#tblEspec caption span{
+    display: block;
+    float: right;
+    color: #000000;
+    font-size: 8pt;
+    margin-top: 10px;
+}
+
+aside#lateral{
+    display: block;
+    width: 300px;
+    float: right;
+    background-color: #dddddd;
+    padding: 6.8px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.5);
+}
+
+aside#lateral video#videoLateral{
+    width: 304px;
+}
+
+aside#lateral h1{
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-top: 0px;
+
+}
+
+aside#lateral h2{
+    font-size: 13pt;
+    background-color: #606060;
+    color: #ffffff;
+    padding: 5px;
+}
+
+footer#rodape{
+    clear: both;
+    border-top: 1px solid #606060;
+}
+
+footer#rodape p{
+    text-align: center;
 }
